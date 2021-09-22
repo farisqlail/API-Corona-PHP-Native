@@ -16,3 +16,5 @@
 
 
 <body>
+
+<?php require_once 'script_navbar.php'; ?>

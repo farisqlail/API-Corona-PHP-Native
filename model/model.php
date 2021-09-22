@@ -36,4 +36,10 @@ class Model {
         );
     }
  
+    public function daerah($row){
+        $data = $row;
+
+        return $data;
+    }
+
 }
