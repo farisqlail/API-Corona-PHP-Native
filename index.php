@@ -10,8 +10,13 @@ if('/mvc/index.php' === $uri) {
 } elseif('/mvc/index.php/daerah' === $uri){
     daerah();
 
-} elseif('/mvc/index.php/daerahStore' ===  $uri && isset($_POST['daerah'])){
-    daerahStore($_POST['daerah']);
+} elseif('/mvc/index.php/daerahStore' ===  $uri && isset($_POST['daerah']) && isset($_POST['positif']) && isset($_POST['meninggal']) && isset($_POST['sembuh'])){
+    daerahStore([
+        $_POST['daerah'],
+        $_POST['positif'],
+        $_POST['sembuh'],
+        $_POST['meninggal']
+    ]);
 
 } else {
 	header('HTTP/1.1 404 Not Found');

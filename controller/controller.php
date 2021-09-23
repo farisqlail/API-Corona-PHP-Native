@@ -17,5 +17,8 @@ function daerah(){
 
 function daerahStore($data){
 
-    echo $data;
+    // var_dump($data);
+
+    require './view/daerah/listDaerah.php';
+    
 }
